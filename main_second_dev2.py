@@ -1,6 +1,9 @@
 from preprocess import *
 import math
 
+def euclidean_distance(p1, p2):
+    return math.sqrt((p1.lat-p2.lat)**2 + (p1.lon-p2.lon)**2)
+
 def haversine_distance(lat1, lon1, lat2, lon2, unit='km'):
     """
     Calculate the Haversine distance between two points on Earth.
